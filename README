@@ -16,10 +16,12 @@ Cuisinier des Titans !
 
 # How to use
 
-Open `mannekenpix.js` and edit the following line with the proper XMPP credentials :
+First, make sure you've got a XMPP account for your bot. It can be done in a few seconds in jabber.org, or it can even be a GTalk account.
 
-	Common.xmppAccount = {jid: '***@***.***', password: '******'}
+In order to install every dependency, run :
 
-Now run the program in command line :
+	npm install
 
-	$ node mannekenpix
+Then run `node mannekenpix` with some environment variables :
+
+	MANNEKENPIX_JID=***@***.*** MANNEKENPIX_PASSWORD=*** node mannekenpix
