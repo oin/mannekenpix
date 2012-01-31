@@ -1,0 +1,4 @@
+poubelle
+node_modules
+data/*.db
+run.sh

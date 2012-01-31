@@ -1,0 +1,15 @@
+{
+	"name": "mannekenpix",
+	"version": "0.1.0",
+	"dependencies": {
+		"datejs": "latest",
+		"dirty": "latest",
+		"iconv": "latest",
+		"jquery": "latest",
+		"jsdom": "latest",
+		"levenshtein": "latest",
+		"node-xmpp": "latest",
+		"qbox": "latest",
+		"request": "latest"
+	}
+}

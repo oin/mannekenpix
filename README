@@ -1,0 +1,25 @@
+Mannekenpix le Belge
+Cuisinier des Titans !
+
+# Requirements
+
+ * node.js >=0.6.9
+ * npm and the following npm modules :
+ 	* datejs
+ 	* dirty
+ 	* iconv
+ 	* jquery
+ 	* jsdom
+ 	* levenshtein
+ 	* request
+ 	* node-xmpp
+
+# How to use
+
+Open `mannekenpix.js` and edit the following line with the proper XMPP credentials :
+
+	Common.xmppAccount = {jid: '***@***.***', password: '******'}
+
+Now run the program in command line :
+
+	$ node mannekenpix
