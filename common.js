@@ -31,7 +31,15 @@ Common = {
 		})
 		// this.xmpp.conn.on('stanza', function() {})
 		
-		this.xmpp.connect(this.xmppAccount)
+		this.go()
+	},
+	go: function() {
+		try {
+			this.xmpp.connect(this.xmppAccount)
+		} catch(e) {
+			console.error("Crashed: "+e)
+			setTimeout(this.go, 10000)
+		}
 	}
 }
 
