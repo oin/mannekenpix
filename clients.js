@@ -43,7 +43,7 @@ var Client = {
 		return c
 	},
 	send: function(message) {
-		// console.log("To " + this.id + ": " + message);
+		console.log("To " + this.id + ": " + message);
 		Common.xmpp.send(this.id, message)
 	},
 	receive: function(message) {
@@ -91,6 +91,7 @@ Common.client = function(user) {
 }
 
 Common.broadcast = function(from, msg) {
+	console.log("Broadcast from " + from + " :" + msg)
 	Common.clientDatabase.forEach(function(id, user) {
 		if(id != from && user['silent'] != true) {
 			// We've got the right to send messages to him/her !

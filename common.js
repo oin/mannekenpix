@@ -23,7 +23,7 @@ Common = {
 			console.log('Connected.')
 		})
 		this.xmpp.on('chat', function(from, message) {
-			// console.log(from + ' wrote: ' + message)
+			console.log(from + ' wrote: ' + message)
 			self.client(from).receive(message)
 		})
 		this.xmpp.on('error', function(err) {
