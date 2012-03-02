@@ -10,7 +10,7 @@ require('./clients')
 
 process.on('uncaughtException', function(err) {
 	console.error(err)
-	consol.error("Had an uncaught exception. Restarting...")
+	console.error("Had an uncaught exception. Restarting...")
 	run()
 })
 
