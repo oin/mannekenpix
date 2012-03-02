@@ -8,4 +8,14 @@ require('./lunches')
 require('./announces')
 require('./clients')
 
-Common.start()
+process.on('uncaughtException', function(err) {
+	console.error(err)
+	consol.error("Had an uncaught exception. Restarting...")
+	run()
+})
+
+function run() {
+	Common.start()
+}
+
+run()
